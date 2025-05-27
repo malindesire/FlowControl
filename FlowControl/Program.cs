@@ -1,10 +1,12 @@
-﻿namespace FlowControl
+﻿
+
+namespace FlowControl
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            MainMenu.ShowMenu();
         }
     }
 }
