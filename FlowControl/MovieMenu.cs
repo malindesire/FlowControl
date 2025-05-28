@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FlowControl
+﻿namespace FlowControl
 {
     internal class MovieMenu
     {
@@ -22,13 +16,13 @@ namespace FlowControl
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine("You selected Single Price");
+                        Console.WriteLine("You selected Get Single Price");
+                        SinglePrice.ShowSinglePrice();
                         break;
                     case "2":
                         Console.WriteLine("You selected Total Price");
                         break;
                     case "0":
-                        Console.WriteLine("Going back to Main Menu");
                         MainMenu.ShowMenu();
                         break;
                     default:
