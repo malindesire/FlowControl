@@ -24,6 +24,10 @@ namespace FlowControl
             {
                 Console.WriteLine($"Nord number {nth} is: '{words[nth - 1]}'");
             }
+
+            Console.WriteLine("Press any key to return to the main menu.");
+            Console.ReadKey();
+            MainMenu.ShowMenu(); // Return to main menu after finding the word
         }
     }
 }

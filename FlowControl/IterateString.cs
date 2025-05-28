@@ -16,6 +16,10 @@
             }
 
             Console.WriteLine(text);
+
+            Console.WriteLine("Press any key to return to the main menu.");
+            Console.ReadKey(); 
+            MainMenu.ShowMenu(); // Return to main menu after displaying the string
         }
     }
 }
