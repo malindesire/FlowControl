@@ -12,9 +12,9 @@ namespace FlowControl
         {
             do {
                 Console.WriteLine("Main Menu:");
-                Console.WriteLine("1. Movie Prices");
-                Console.WriteLine("2. Iterate x10");
-                Console.WriteLine("3. Get third word");
+                Console.WriteLine("1. Show movie prices");
+                Console.WriteLine("2. Iterate string x10");
+                Console.WriteLine("3. Find the third word");
                 Console.WriteLine("0. Exit");
                 Console.Write("Please select an option: ");
 
@@ -22,15 +22,16 @@ namespace FlowControl
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine("You selected Movie Prices");
+                        Console.WriteLine("You selected \"Show movie prices\"");
                         MovieMenu.ShowMenu();
                         break;
                     case "2":
-                        Console.WriteLine("You selected Iterate x10.");
+                        Console.WriteLine("You selected \"Iterate string x10\"");
                         IterateString.Run();
                         break;
                     case "3":
-                        Console.WriteLine("You selected Get Third Word");
+                        Console.WriteLine("You selected \"Find the third word\"");
+                        FindNthWord.FindWord(3);
                         break;
                     case "0":
                         Console.WriteLine("Exiting the program.");
