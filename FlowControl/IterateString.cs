@@ -2,16 +2,16 @@
 {
     internal class IterateString
     {
-        public static void Run()
+        public static void Iterate(int qty)
         {
-            Console.Write("Enter a string that will be iterated 10 times: ");
+            Console.Write($"Enter a string that will be iterated {qty} times: ");
             string input = Console.ReadLine() ?? string.Empty;
 
             string text = string.Empty;
             
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < qty; i++)
             {   
-                string ending = i == 9 ? "." : ", ";
+                string ending = i + 1 == qty ? "." : ", ";
                 text += $"{i + 1}. {input}{ending}";
             }
 
