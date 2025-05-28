@@ -20,7 +20,8 @@
                         SinglePrice.ShowSinglePrice();
                         break;
                     case "2":
-                        Console.WriteLine("You selected Total Price");
+                        Console.WriteLine("You selected Get Total Price");
+                        TotalPrice.ShowTotalPrice();
                         break;
                     case "0":
                         MainMenu.ShowMenu();
