@@ -6,34 +6,30 @@ using System.Threading.Tasks;
 
 namespace FlowControl
 {
-    internal class MainMenu
+    internal class MovieMenu
     {
         public static void ShowMenu()
         {
-            do {
-                Console.WriteLine("Main Menu:");
-                Console.WriteLine("1. Movie Prices");
-                Console.WriteLine("2. Iterate x10");
-                Console.WriteLine("3. Get third word");
-                Console.WriteLine("0. Exit");
+            do
+            {
+                Console.WriteLine("Movie Menu:");
+                Console.WriteLine("1. Get Single Price");
+                Console.WriteLine("2. Get Total Price");
+                Console.WriteLine("0. Go to Main Menu");
                 Console.Write("Please select an option: ");
 
                 string choice = Console.ReadLine() ?? string.Empty;
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine("You selected Movie Prices");
-                        MovieMenu.ShowMenu();
+                        Console.WriteLine("You selected Single Price");
                         break;
                     case "2":
-                        Console.WriteLine("You selected Iterate x10.");
-                        break;
-                    case "3":
-                        Console.WriteLine("You selected Get Third Word");
+                        Console.WriteLine("You selected Total Price");
                         break;
                     case "0":
-                        Console.WriteLine("Exiting the program.");
-                        Environment.Exit(0);
+                        Console.WriteLine("Going back to Main Menu");
+                        MainMenu.ShowMenu();
                         break;
                     default:
                         Console.WriteLine("Invalid selection, please try again.");
@@ -41,7 +37,6 @@ namespace FlowControl
                         break;
                 }
             } while (true);
-
         }
     }
 }
