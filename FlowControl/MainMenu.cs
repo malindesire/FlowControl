@@ -27,6 +27,7 @@ namespace FlowControl
                         break;
                     case "2":
                         Console.WriteLine("You selected Iterate x10.");
+                        IterateString.Run();
                         break;
                     case "3":
                         Console.WriteLine("You selected Get Third Word");
