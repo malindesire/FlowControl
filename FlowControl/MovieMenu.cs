@@ -6,21 +6,21 @@
         {
             do
             {
-                Console.WriteLine("Movie Menu:");
-                Console.WriteLine("1. Get Single Price");
-                Console.WriteLine("2. Get Total Price");
-                Console.WriteLine("0. Go to Main Menu");
+                Console.WriteLine("Movie price menu:");
+                Console.WriteLine("1. Show single price");
+                Console.WriteLine("2. Show total price");
+                Console.WriteLine("0. Go back to the main menu");
                 Console.Write("Please select an option: ");
 
                 string choice = Console.ReadLine() ?? string.Empty;
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine("You selected Get Single Price");
+                        Console.WriteLine("You selected \"Show single price\"");
                         SinglePrice.ShowSinglePrice();
                         break;
                     case "2":
-                        Console.WriteLine("You selected Get Total Price");
+                        Console.WriteLine("You selected \"Show total price\"");
                         TotalPrice.ShowTotalPrice();
                         break;
                     case "0":

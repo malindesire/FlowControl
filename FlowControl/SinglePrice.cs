@@ -12,7 +12,7 @@
                 Visitor visitor = new Visitor(age);
                 Console.WriteLine($"The price for age {visitor.Age} is: {visitor.Price}kr");
 
-                Console.WriteLine("Press any key to return to the Movie Menu...");
+                Console.WriteLine("Press any key to return to the movie price menu...");
                 Console.ReadKey();
                 MovieMenu.ShowMenu();
             }

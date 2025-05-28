@@ -34,7 +34,7 @@
                 ShowTotalPrice(); // Retry if input is invalid
             }
 
-            Console.WriteLine("Press any key to return to the Movie Menu.");
+            Console.WriteLine("Press any key to return to the movie price menu.");
             Console.ReadKey();
             MovieMenu.ShowMenu();
         }
