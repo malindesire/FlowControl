@@ -5,5 +5,6 @@
         Regular = 120,
         Youth = 80,
         Senior = 90,
+        Freebies = 0,
     }
 }
